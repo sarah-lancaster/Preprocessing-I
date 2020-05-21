@@ -139,4 +139,37 @@ html {
 }
 body {
   background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+h1 {
+  display: flex;
+  color: #8400ac;
+  font-weight: bold;
+  font-size: 5rem;
+  box-sizing: border-box;
+  border: 0.5rem dotted #03ffb3;
+}
+.tagline {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #64004f;
+  border: 0.5rem dotted #ffff8e;
+}
+.flower img {
+  display: flex;
+  width: 40rem;
+  box-sizing: border-box;
 }
