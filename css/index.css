@@ -167,15 +167,18 @@ header h1 {
   padding: 2rem;
   text-align: center;
 }
-header .tagline {
+.tagline {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
   font-style: italic;
   font-weight: bold;
   font-size: 3rem;
   color: #64004f;
   border: 0.5rem dotted #ffff8e;
-  margin: 1rem;
   padding: 1rem;
-  text-align: center;
   box-sizing: border-box;
 }
 .navbar {
@@ -191,6 +194,13 @@ header .tagline {
   margin: 1rem;
   margin-right: 2rem;
   margin-left: 2rem;
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
 }
 .flower {
   display: flex;
@@ -211,6 +221,15 @@ header .tagline {
   background-color: gold;
   color: #ff0281;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .flower {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
 }
 .intro {
   display: flex;
