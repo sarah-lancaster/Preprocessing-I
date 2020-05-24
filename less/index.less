@@ -55,52 +55,89 @@ table {
 
 html, body {
 	height: 100%;
-}
-
-html {
 	font-size: 62.5%;
 }
 
+// mixins:
 
-body {
-	background-color: hotpink;
+.flex{
 	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
 }
 
+.margin{
+	margin:0 auto;
+}
+
+
 .container {
-	display: flex;
+	.flex();
+	.margin();
 	box-sizing: border-box;
+	background-color: hotpink;
+	flex-direction: column;
 }
 
 header{
-	display: flex;
-	justify-content: center;
+	.flex();
+	.margin();
+	justify-content: space-evenly;
 	flex-direction: column;
 	align-content: center;
-}
-
-h1 {
-	display: flex;
-	color: rgb(132, 0, 172);
-	font-weight: bold;
-	font-size: 5rem;
 	box-sizing: border-box;
-	border: .5rem dotted rgb(3, 255, 179);
+	h1 {
+		.flex();
+		color: rgb(132, 0, 172);
+		font-weight: bold;
+		font-size: 5rem;
+		box-sizing: border-box;
+		border: .5rem dotted rgb(3, 255, 179);
+		margin: 2rem;
+		padding: 1rem;
+		text-align: center;
+	}
+	.tagline{
+		font-style: italic;
+		font-weight: bold;
+		font-size: 3rem;
+		color:rgb(100, 0, 79);
+		border: .5rem dotted rgb(255, 255, 142);
+		margin: 1rem;
+		padding: 1rem;
+		text-align: center;
+	}
 }
 
-.tagline{
-	font-style: italic;
-	font-weight: bold;
-	font-size: 3rem;
-	// text-shadow: rgb(248, 60, 255);
-	color:rgb(100, 0, 79);
-	border: .5rem dotted rgb(255, 255, 142);
-}
 
-.flower img{
-	display: flex;
-	width: 40rem;
+.navbar{
+	.flex();
+	.margin();
 	box-sizing: border-box;
+	justify-content:space-evenly;
+	width: 40%;
+	a{
+		font-size: 2.5rem;
+		margin: 1rem;
+	}
 }
+
+
+.flower{
+	.flex();
+	.margin();
+	flex-direction: column;
+	img{
+		.flex();
+		.margin();
+		width: 40rem;
+		box-sizing: border-box;
+	}
+	h2{
+		font-size: 2.5rem;
+		margin: 1rem;
+		background-color: gold;
+		color: rgb(255, 2, 129);
+		padding:1rem;
+	}
+}
+
+
