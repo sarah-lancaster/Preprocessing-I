@@ -164,7 +164,7 @@ header h1 {
   box-sizing: border-box;
   border: 0.5rem dotted #03ffb3;
   margin: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 header .tagline {
@@ -176,22 +176,27 @@ header .tagline {
   margin: 1rem;
   padding: 1rem;
   text-align: center;
+  box-sizing: border-box;
 }
 .navbar {
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
   justify-content: space-evenly;
-  width: 40%;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 .navbar a {
   font-size: 2.5rem;
   margin: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 .flower {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .flower img {
   display: flex;
@@ -202,6 +207,7 @@ header .tagline {
 .flower h2 {
   font-size: 2.5rem;
   margin: 1rem;
+  margin-top: 3rem;
   background-color: gold;
   color: #ff0281;
   padding: 1rem;
@@ -212,6 +218,7 @@ header .tagline {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .intro h2 {
   font-size: 2rem;
@@ -219,6 +226,7 @@ header .tagline {
   color: #00ffc8;
   border: 0.5rem dotted #ffff8e;
   padding: 1rem;
+  margin-top: 3rem;
 }
 .intro p {
   font-size: 1.5rem;
@@ -229,6 +237,7 @@ header .tagline {
 .p-intro {
   border: 0.5rem dotted #00ffc8;
   margin: 1rem 45rem;
+  box-sizing: border-box;
 }
 .history {
   display: flex;
@@ -236,6 +245,7 @@ header .tagline {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .history h2 {
   font-size: 2rem;
@@ -258,24 +268,89 @@ header .tagline {
   font-style: oblique;
   color: #4f005f;
 }
+.catch {
+  display: flex;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: 5rem;
+  color: #5900ff;
+  padding: 1rem;
+}
 .skills-connect {
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 5rem;
+  box-sizing: border-box;
 }
-.skills-connect h2 {
-  font-size: 2rem;
-  margin: 1rem;
-  color: #5900ff;
-  padding: 1rem;
-}
-.skills p {
+.skills {
   display: flex;
   margin: 0 auto;
+  align-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  border: 0.5rem dotted #ffff8e;
+  margin-right: 5rem;
+}
+.skills #set {
+  display: flex;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #5900ff;
+}
+.skills p {
   margin-bottom: 2rem;
   font-style: italic;
   font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.skills p:last-child {
+  padding-bottom: 1.5rem;
+}
+.connect {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  border: 0.5rem dotted #ffff8e;
+  margin-left: 5rem;
+}
+.connect #here {
+  display: flex;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #5900ff;
+}
+.connect p {
+  margin-bottom: 3rem;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+footer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: #4c00ff;
 }
