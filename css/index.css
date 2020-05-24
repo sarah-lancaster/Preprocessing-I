@@ -247,16 +247,19 @@ header h1 {
   padding: 1rem;
   margin-top: 3rem;
 }
-.intro p {
-  font-size: 1.5rem;
-  background-color: #fc66f7;
-  color: #4f005f;
-  padding: 1rem;
-}
 .p-intro {
+  display: flex;
   border: 0.5rem dotted #00ffc8;
-  margin: 1rem 45rem;
   box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .p-intro {
+    margin: 2rem;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    color: #2e006b;
+  }
 }
 .history {
   display: flex;
@@ -287,12 +290,36 @@ header h1 {
   font-style: oblique;
   color: #4f005f;
 }
+@media (max-width: 500px) {
+  .history {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+}
 .catch {
   display: flex;
   margin: 0 auto;
   font-size: 2rem;
   margin-top: 5rem;
   color: #5900ff;
+  border: 0.5rem dotted #ff33bb;
   padding: 1rem;
 }
 .skills-connect {
