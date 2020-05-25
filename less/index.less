@@ -68,12 +68,13 @@ html, body {
 	margin:0 auto;
 }
 
+// styling
 
 .container {
 	.flex();
 	.margin();
 	box-sizing: border-box;
-	background-color: hotpink;
+	background: linear-gradient(to bottom,rgb(227, 113, 255) 0%, #74006e 100%);
 	flex-direction: column;
 }
 
@@ -86,16 +87,32 @@ header{
 	box-sizing: border-box;
 	h1 {
 		.flex();
-		color: rgb(132, 0, 172);
+		color: rgb(0, 255, 234);
 		font-weight: bold;
 		font-size: 5rem;
 		box-sizing: border-box;
-		border: .5rem dotted rgb(3, 255, 179);
+		border-radius: 3rem;
 		margin: 2rem;
 		padding: 2rem;
 		text-align: center;
+		background-color: rgb(243, 10, 126);
 	}
 }
+
+header h1:hover{
+    background-color: rgb(131, 255, 234);
+	color: rgb(247, 68, 172);
+	text-shadow: 2px 2px 5px #ffe97b;
+    animation: glowing 1500ms infinite;
+  }
+    
+  @keyframes glowing {
+    0% { box-shadow: 0 0 -10px #ffe97b; }
+    40% { box-shadow: 0 0 40px #ffe97b; }
+    60% { box-shadow: 0 0 40px #ffe97b; }
+    100% { box-shadow: 0 0 -10px #ffe97b; }
+  }
+  
 
 .tagline{
 	.flex();
@@ -107,13 +124,29 @@ header{
 	font-style: italic;
 	font-weight: bold;
 	font-size: 3rem;
-	color:rgb(100, 0, 79);
-	border: .5rem dotted rgb(255, 255, 142);
+	color:rgb(230, 0, 180);
+	background-color: rgb(4, 255, 242);
+	border-radius: 3rem;
 	padding: 1rem;
 	box-sizing: border-box;
 }
 
-
+.tagline:hover{
+	background-color: rgb(131, 255, 234);
+	color: #fa04b0;
+	background-color: rgb(45, 0, 66);
+	text-shadow: 2px 2px 5px #b0e2ff;
+    animation: glowing 1500ms infinite;
+  }
+    
+	@keyframes glowing {
+		0% { box-shadow: 0 0 -10px #ffe97b; }
+		40% { box-shadow: 0 0 40px #ffe97b; }
+		60% { box-shadow: 0 0 40px #ffe97b; }
+		100% { box-shadow: 0 0 -10px #ffe97b; }
+	}
+    
+ 
 
 .navbar{
 	.flex();
@@ -127,6 +160,10 @@ header{
 		margin: 1rem;
 		margin-right: 2rem;
 		margin-left: 2rem;
+		text-decoration: none;
+		padding:1rem;
+		border: .25rem solid #fa04b0;
+		border-radius: 3rem;
 	}
 	@media(max-width: 500px){
 		flex-direction: column;
@@ -382,7 +419,19 @@ footer{
 	font-size: 3rem;
 	margin-top: 5rem;
 	margin-bottom: 3rem;
+	border: .25rem solid yellow;
+	border-radius: 3rem;
+	padding:1rem;
 	color: rgb(76, 0, 255);
+	text-shadow: 2px 2px 5px yellow;
+	animation: glowing 1500ms infinite;
+    
+	@keyframes glowing {
+		0% { box-shadow: 0 0 -10px #ffe97b; }
+		40% { box-shadow: 0 0 40px #ffe97b; }
+		60% { box-shadow: 0 0 40px #ffe97b; }
+		100% { box-shadow: 0 0 -10px #ffe97b; }
+	}
 	@media(max-width: 500px){
 		flex-direction: column;
 		align-items: center;

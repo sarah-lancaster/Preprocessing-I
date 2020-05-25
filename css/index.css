@@ -145,7 +145,7 @@ body {
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: hotpink;
+  background: linear-gradient(to bottom, #e371ff 0%, #74006e 100%);
   flex-direction: column;
 }
 header {
@@ -158,14 +158,35 @@ header {
 }
 header h1 {
   display: flex;
-  color: #8400ac;
+  color: #00ffea;
   font-weight: bold;
   font-size: 5rem;
   box-sizing: border-box;
-  border: 0.5rem dotted #03ffb3;
+  border-radius: 3rem;
   margin: 2rem;
   padding: 2rem;
   text-align: center;
+  background-color: #f30a7e;
+}
+header h1:hover {
+  background-color: #83ffea;
+  color: #f744ac;
+  text-shadow: 2px 2px 5px #ffe97b;
+  animation: glowing 1500ms infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
+  40% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  60% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  100% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
 }
 .tagline {
   display: flex;
@@ -176,10 +197,32 @@ header h1 {
   font-style: italic;
   font-weight: bold;
   font-size: 3rem;
-  color: #64004f;
-  border: 0.5rem dotted #ffff8e;
+  color: #e600b4;
+  background-color: #04fff2;
+  border-radius: 3rem;
   padding: 1rem;
   box-sizing: border-box;
+}
+.tagline:hover {
+  background-color: #83ffea;
+  color: #fa04b0;
+  background-color: #2d0042;
+  text-shadow: 2px 2px 5px #b0e2ff;
+  animation: glowing 1500ms infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
+  40% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  60% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  100% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
 }
 .navbar {
   display: flex;
@@ -194,6 +237,10 @@ header h1 {
   margin: 1rem;
   margin-right: 2rem;
   margin-left: 2rem;
+  text-decoration: none;
+  padding: 1rem;
+  border: 0.25rem solid #fa04b0;
+  border-radius: 3rem;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -437,7 +484,26 @@ footer {
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
+  border: 0.25rem solid yellow;
+  border-radius: 3rem;
+  padding: 1rem;
   color: #4c00ff;
+  text-shadow: 2px 2px 5px yellow;
+  animation: glowing 1500ms infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
+  40% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  60% {
+    box-shadow: 0 0 40px #ffe97b;
+  }
+  100% {
+    box-shadow: 0 0 -10px #ffe97b;
+  }
 }
 @media (max-width: 500px) {
   footer {
