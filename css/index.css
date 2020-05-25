@@ -249,6 +249,9 @@ header h1 {
 }
 .p-intro {
   display: flex;
+  font-size: 1.5rem;
+  width: 50%;
+  padding: 1rem;
   border: 0.5rem dotted #00ffc8;
   box-sizing: border-box;
 }
