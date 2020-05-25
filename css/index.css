@@ -322,6 +322,15 @@ header h1 {
   border: 0.5rem dotted #ff33bb;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  .catch {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
 .skills-connect {
   display: flex;
   margin: 0 auto;
@@ -330,6 +339,15 @@ header h1 {
   flex-direction: row;
   margin-top: 5rem;
   box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .skills-connect {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
 }
 .skills {
   display: flex;
@@ -360,6 +378,15 @@ header h1 {
 .skills p:last-child {
   padding-bottom: 1.5rem;
 }
+@media (max-width: 500px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
 .connect {
   display: flex;
   margin: 0 auto;
@@ -387,6 +414,15 @@ header h1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media (max-width: 500px) {
+  .connect {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
+}
 footer {
   display: flex;
   margin: 0 auto;
@@ -399,4 +435,14 @@ footer {
   margin-top: 5rem;
   margin-bottom: 3rem;
   color: #4c00ff;
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 7rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
